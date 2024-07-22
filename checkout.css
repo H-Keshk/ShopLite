@@ -1,0 +1,471 @@
+body{
+    margin: 0;
+    font-family: 'Outfit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+u{
+    cursor: pointer;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+header p{
+    padding: 6px 75px;
+    margin: 0;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+
+    border: 1px solid #ececec;
+    text-align: center;
+}
+header a{
+    color: rgb(100, 100, 100);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.title{
+    margin-top: 7px;
+    margin-left: 130px;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #393939;
+}
+.grey-fontcolor{
+    color: grey;
+    font-weight: 400;
+    margin-left: -4px;
+}
+.middle-sec{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+}
+.middle-sec li:not(.pages){
+    margin: 0 10px;
+    font-size: 13px;
+    color: grey;
+}
+.pages{
+    margin: 0 10px;
+    font-size: 13px;
+    color: rgba(255, 101, 67, 1);
+}
+.dropdown{
+    width: 10px;
+    margin-left: -2px;
+}
+.right-sec{
+    margin-right: 130px;
+}
+.right-sec img:not(.search-icon){
+    width: 18px;
+    margin: 0px 5px;
+}
+.search-icon{
+    width: 20px;
+    margin: 0 5px;
+}
+.checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:
+    rgba(240, 240, 240, 1);
+    font-weight: 200;
+    line-height: 5px;
+    padding: 70px;
+    margin-bottom: 100px;
+}
+.checkout h1{
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.checkout a{
+    color: #393939;
+    text-decoration: underline;
+}
+.user-confirm{
+    display: flex;
+    flex-direction: row;
+    margin: 0 120px;
+    justify-content: space-between;
+}
+.user-confirm h2{
+    margin-left: 0;
+    font-size: 20px;
+}
+.user-confirm label{
+    font-weight: 200;
+    font-size: 14px;
+}
+.user-confirm input{
+    margin: 5px 0 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form:not(.payment-opt){
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 15px;
+}
+::placeholder{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Outfit", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.additional-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.cart-totals{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.cart-totals h2{
+    margin: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 200;
+    word-spacing: 5px;
+    border-bottom: 1px solid #f3f6f4;
+}
+.totals{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #f3f6f4;
+}
+.categ{
+    padding: 0;
+    margin: 0 210px 0 0;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.num{
+    font-weight: 200;
+    font-size: 12px;
+    margin: 0;
+    line-height: 30px;
+    color: rgba(255, 101, 67, 1);
+}
+.total-price{
+    margin-right: 232px;
+}
+.container {
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-weight: 200;
+}
+input[type='radio']{
+    width: 12px;
+}
+.container label{
+    margin-left: 8px;
+}
+input[type='submit']{
+    margin: 20px 0 80px;
+    border: none;
+    background-color: rgba(255, 101, 67, 1);
+    color: white;
+    padding: 10px 27px;
+    width: fit-content;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 100;
+    cursor: pointer;
+}
+h2{
+    margin: 20px 120px;
+    color: #393939;
+    font-size: 22px;
+    font-weight: 200;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+h2 span, .sep-line{
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 200;
+    margin-left: 15px;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    margin: 0 120px;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.slide-btn{
+    background: none;
+    border: 1px solid #dadada;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slide-btn img{
+    width: 25px;
+    margin: 0;
+}
+.reviews article{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+}
+q{
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.reviews article img{
+    width: 50px;
+}
+address{
+    margin: 0;
+    text-transform: capitalize;
+    font-style: normal;
+}
+.latest-posts{
+    display: flex;
+    flex-direction: row;
+    margin: 0 120px;
+}
+.post{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 15px;
+}
+.post button{
+    width: fit-content;
+    border: none;
+    background-color: rgba(255, 101, 67, 1);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 11px;
+    padding: 4px;
+    cursor: pointer;
+}
+.post img{
+    object-fit: cover;
+    object-position: center;
+}
+.post-title{
+    text-transform: uppercase;
+    color: #393939;
+    font-size: 12px;
+}
+.post-body{
+    font-size: 12px;
+    color: #393939;
+}
+.post a{
+    text-decoration: underline;
+    color: #393939;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 70px 0;
+    padding: 20px 0;
+    border: 1px solid #e7e7e7;
+}
+.roboto{
+    font-family: 'Roboto';
+    color: #a3a3a3;
+    font-size: 20px;
+    font-weight: 300;
+}
+.roboto span{
+    color: #c3c3c3;
+}
+.jost{
+    font-family: 'Jost';
+    color: #a3a3a3;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.inter{
+    font-family: 'Inter';
+    color: #a3a3a3;
+    font-size: 22px;
+    font-weight: 600;
+}
+.syne{
+    font-family: 'Syne';
+    color: #a3a3a3;
+    font-size: 20px;
+    font-weight: 400;
+}
+.lora{
+    font-family: 'Lora';
+    color: #a3a3a3;
+    font-size: 18px;
+    font-weight: 100;
+}
+.insta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.insta p{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.imgs{
+    display: flex;
+    flex-direction: row;
+    margin: 0 120px 100px;
+    justify-content: space-between;
+}
+.imgs img{
+    width: 160px;
+    height: 160px;
+    margin-right: 9px;
+    margin-left: 9px;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 180px;
+    align-items: start;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.one{
+    width: 250px;
+}
+.four{
+    width: 160px;
+}
+.menu-title{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #393939;
+}
+.m1{
+    font-weight: 500;
+}
+.m1 span{
+    color: #a3a3a3;
+    margin-left: 3px;
+}
+.menu-body{
+    color: #393939;
+    font-size: 12px;
+    font-weight: 300;
+    list-style: none;color: #393939;
+    padding: 0;
+}
+.three .menu-body{
+    line-height: 10px;
+}
+.menu-body a{
+    color: #393939;
+    text-decoration: none;
+}
+.menu-body a:hover{
+    color: rgba(255, 101, 67, 1);
+}
+.icons img{
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+.fb{
+    width: 3px;
+    height: 5px;
+}
+.four p{
+    margin-bottom: 3px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    color: #393939;
+    font-size: 12px;
+}
+.left-f{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shipment, .payment{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.shipment img{
+    width: 38px;
+    height: 18px;
+    margin: 10px 5px;
+}
+.payment img:not(.paypal){
+    width: 28px;
+    height: 18px;
+    margin: 10px 0px 10px 8px;
+}
+.paypal{
+    width: 26px;
+    height: 14px;
+    margin: 13px 8px;
+}
