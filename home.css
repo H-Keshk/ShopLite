@@ -148,7 +148,8 @@ nav{
 .gopro-cam img{
     width: 550px;
     vertical-align: center;
-    margin-top: 70px;
+    margin-top: 55px;
+    margin-left: 20px;
 }
 .articles{
     display: flex;
